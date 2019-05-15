@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "material-fit"
+  "defaultProject": "material-fit",
+  "cli": {
+    "warnings": {
+      "typescriptMismatch": false
+    }
+  }
 }
