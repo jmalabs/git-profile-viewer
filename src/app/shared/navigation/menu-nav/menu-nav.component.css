@@ -3,7 +3,6 @@ mat-sidenav {
     width: 250px;
     background-color: #3f51b5;
     margin-top: 4rem;
-  
   }
   
   mat-sidenav a {
@@ -39,7 +38,7 @@ mat-sidenav {
   }
   
   mat-toolbar {
-    height: 64px;
+    height: 80px;
     position: fixed;
     z-index: 100;
     width: 100% !important;
@@ -51,4 +50,18 @@ mat-sidenav {
   
   mat-sidenav-content {
     margin-top: 6rem;
+  }
+
+  .logo{
+    margin: 1rem;
+  }
+
+  .brand {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bolder;
+  }
+  .sub-brand {
+    font-size: 1.3rem;
+    font-style: italic;
   }

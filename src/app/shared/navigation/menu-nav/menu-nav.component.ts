@@ -6,8 +6,14 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./menu-nav.component.css']
 })
 export class MenuNavComponent implements OnInit {
+  appName: string;
+  subAppName: string;
   @Output() sidenavToggle = new EventEmitter<void>();
-  constructor() { }
+  constructor() {
+
+    this.appName = 'GIT';
+    this.subAppName = 'profile viewer';
+   }
 
   ngOnInit() { }
 

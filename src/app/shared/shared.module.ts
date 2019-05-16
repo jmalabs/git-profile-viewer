@@ -8,6 +8,7 @@ import { MaterialModule } from '../core/material.module';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from '../app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [MenuNavComponent, SideNavComponent],
@@ -15,7 +16,8 @@ import { AppRoutingModule } from '../app-routing.module';
     , FormsModule
     , FlexLayoutModule
     , BrowserAnimationsModule
-    , AppRoutingModule],
+    , AppRoutingModule
+    , HttpClientModule],
   exports: [MaterialModule
     , FormsModule
     , FlexLayoutModule
@@ -23,6 +25,7 @@ import { AppRoutingModule } from '../app-routing.module';
     , AppRoutingModule
     , MenuNavComponent
     , SideNavComponent
+    , HttpClientModule
   ]
 })
 export class SharedModule { }

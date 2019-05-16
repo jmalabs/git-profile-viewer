@@ -1,0 +1,24 @@
+mat-card{
+    max-width: 400px;
+}
+
+.profile-img{
+    padding: 1rem;
+}
+
+.mat-card-image{
+    margin: 1rem;
+}
+
+
+
+.profile-section{
+    display: inline-flex;
+    flex-flow: row wrap;
+    /* height: 100vh; */
+}
+
+
+.profile-card{
+    min-width: 400px;
+}
