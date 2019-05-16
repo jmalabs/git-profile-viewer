@@ -1,3 +1,4 @@
+import { ProfileModule } from './modules/profile/profile.module';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,8 +9,8 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { SideNavComponent } from './navigation/side-nav/side-nav.component';
-import { MenuNavComponent } from './navigation/menu-nav/menu-nav.component';
+import { ProfileComponent } from './modules/profile/components/profile/profile.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,13 @@ import { MenuNavComponent } from './navigation/menu-nav/menu-nav.component';
     SignupComponent,
     LoginComponent,
     WelcomeComponent,
-    SideNavComponent,
-    MenuNavComponent
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
     CoreModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
+   
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
